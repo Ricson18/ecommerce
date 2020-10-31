@@ -34,30 +34,17 @@ MYSQL >=5.7</code>
 
 ## Install
 <pre><code>git clone https://github.com/Ricson18/ecommerce.git</code></pre>
-<pre>
-    <code>composer install</code>
-</pre>
-<pre>
-    <code>npm install</code>
-</pre>
-<pre>
-    <code>npm run dev</code>
-</pre>
+<pre><code>composer install</code></pre>
+<pre><code>npm install</code></pre>
+<pre><code>npm run dev</code></pre>
 
 
 ## Database Configuration
 Go into .env file and change Database credentials.
-<pre>
-    <code>
-        php artisan migrate
-    </code>
-</pre>
-<pre>
-    <code>
-        php artisan key:generate
-    </code>
-</pre>
+<pre><code>php artisan migrate</code></pre>
+<pre><code>php artisan key:generate</code></pre>
 
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+s
