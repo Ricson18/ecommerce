@@ -40,7 +40,7 @@ MYSQL >=5.7</code>
 
 
 ## Database Configuration
-Go into .env file and change Database credentials.
+Go into .env file and change Database credentials and then run:
 <pre><code>php artisan migrate</code></pre>
 <pre><code>php artisan key:generate</code></pre>
 
