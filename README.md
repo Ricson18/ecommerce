@@ -7,14 +7,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Laravel Backend with Vue frontend SPA(Single page Application)
+## Laravel Backend with Vue Frontend SPA(Single page Application)
 
-This an ecommerce platform built with Laravel and VueJs. With Laravel as its Backend engine and vueJs as a single page appplication.
+This an ecommerce platform built with Laravel and VueJs. With Laravel as its Backend engine and VueJs as its frontend single page appplication.
 
 ## Features
-- Admin Dashboard to manage products, Categories and Orders
+- Admin Dashboard to manage Products, Categories and Orders
 - User management with Role permissions
-- Landing page, Shop page, Product page, cart page, Billing page and Payment
+- Landing page, Shop page, Product page, Cart page, Billing page and Payment
 
 
 <!-- - [Simple, fast routing engine](https://laravel.com/docs/routing).
@@ -47,4 +47,3 @@ Go into .env file and change Database credentials.
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-s
