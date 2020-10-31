@@ -27,11 +27,8 @@ This an ecommerce platform built with Laravel and VueJs. With Laravel as its Bac
 
 
 ## Requirements
-<pre><code>
-PHP >=7.3
-MYSQL >=5.7
-</code></pre>
-
+<pre><code>PHP >=7.3
+MYSQL >=5.7</code></pre>
 
 ## Install
 <pre><code>git clone https://github.com/Ricson18/ecommerce.git</code>
