@@ -457,7 +457,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 
@@ -797,30 +796,6 @@ var render = function() {
                           1
                         )
                       ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "vs-tab",
-                      {
-                        attrs: {
-                          label: "Social",
-                          "icon-pack": "feather",
-                          icon: "icon-share-2"
-                        }
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "tab-text" },
-                          [
-                            _c("user-edit-tab-social", {
-                              staticClass: "mt-4",
-                              attrs: { data: _vm.user_data }
-                            })
-                          ],
-                          1
-                        )
-                      ]
                     )
                   ],
                   1
@@ -910,42 +885,6 @@ var render = function() {
                 {
                   name: "validate",
                   rawName: "v-validate",
-                  value: "required|alpha_num",
-                  expression: "'required|alpha_num'"
-                }
-              ],
-              staticClass: "w-full mt-4",
-              attrs: { label: "Username", name: "username" },
-              model: {
-                value: _vm.data_local.username,
-                callback: function($$v) {
-                  _vm.$set(_vm.data_local, "username", $$v)
-                },
-                expression: "data_local.username"
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "span",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.errors.has("username"),
-                    expression: "errors.has('username')"
-                  }
-                ],
-                staticClass: "text-danger text-sm"
-              },
-              [_vm._v(_vm._s(_vm.errors.first("username")))]
-            ),
-            _vm._v(" "),
-            _c("vs-input", {
-              directives: [
-                {
-                  name: "validate",
-                  rawName: "v-validate",
                   value: "required|alpha_spaces",
                   expression: "'required|alpha_spaces'"
                 }
@@ -1016,150 +955,107 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "vx-col md:w-1/2 w-full" },
-          [
-            _c(
-              "div",
-              { staticClass: "mt-4" },
-              [
-                _c("label", { staticClass: "vs-input--label" }, [
-                  _vm._v("Status")
-                ]),
-                _vm._v(" "),
-                _c("v-select", {
-                  directives: [
-                    {
-                      name: "validate",
-                      rawName: "v-validate",
-                      value: "required",
-                      expression: "'required'"
-                    }
-                  ],
-                  attrs: {
-                    clearable: false,
-                    options: _vm.statusOptions,
-                    name: "status",
-                    dir: _vm.$vs.rtl ? "rtl" : "ltr"
-                  },
-                  model: {
-                    value: _vm.status_local,
-                    callback: function($$v) {
-                      _vm.status_local = $$v
-                    },
-                    expression: "status_local"
-                  }
-                }),
-                _vm._v(" "),
-                _c(
-                  "span",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.errors.has("status"),
-                        expression: "errors.has('status')"
-                      }
-                    ],
-                    staticClass: "text-danger text-sm"
-                  },
-                  [_vm._v(_vm._s(_vm.errors.first("status")))]
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "mt-4" },
-              [
-                _c("label", { staticClass: "vs-input--label" }, [
-                  _vm._v("Role")
-                ]),
-                _vm._v(" "),
-                _c("v-select", {
-                  directives: [
-                    {
-                      name: "validate",
-                      rawName: "v-validate",
-                      value: "required",
-                      expression: "'required'"
-                    }
-                  ],
-                  attrs: {
-                    clearable: false,
-                    options: _vm.roleOptions,
-                    name: "role",
-                    dir: _vm.$vs.rtl ? "rtl" : "ltr"
-                  },
-                  model: {
-                    value: _vm.role_local,
-                    callback: function($$v) {
-                      _vm.role_local = $$v
-                    },
-                    expression: "role_local"
-                  }
-                }),
-                _vm._v(" "),
-                _c(
-                  "span",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.errors.has("role"),
-                        expression: "errors.has('role')"
-                      }
-                    ],
-                    staticClass: "text-danger text-sm"
-                  },
-                  [_vm._v(_vm._s(_vm.errors.first("role")))]
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("vs-input", {
-              directives: [
-                {
-                  name: "validate",
-                  rawName: "v-validate",
-                  value: "alpha_spaces",
-                  expression: "'alpha_spaces'"
-                }
-              ],
-              staticClass: "w-full mt-4",
-              attrs: { label: "Company", name: "company" },
-              model: {
-                value: _vm.data_local.company,
-                callback: function($$v) {
-                  _vm.$set(_vm.data_local, "company", $$v)
-                },
-                expression: "data_local.company"
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "span",
-              {
+        _c("div", { staticClass: "vx-col md:w-1/2 w-full" }, [
+          _c(
+            "div",
+            { staticClass: "mt-4" },
+            [
+              _c("label", { staticClass: "vs-input--label" }, [
+                _vm._v("Status")
+              ]),
+              _vm._v(" "),
+              _c("v-select", {
                 directives: [
                   {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.errors.has("company"),
-                    expression: "errors.has('company')"
+                    name: "validate",
+                    rawName: "v-validate",
+                    value: "required",
+                    expression: "'required'"
                   }
                 ],
-                staticClass: "text-danger text-sm"
-              },
-              [_vm._v(_vm._s(_vm.errors.first("company")))]
-            )
-          ],
-          1
-        )
+                attrs: {
+                  clearable: false,
+                  options: _vm.statusOptions,
+                  name: "status",
+                  dir: _vm.$vs.rtl ? "rtl" : "ltr"
+                },
+                model: {
+                  value: _vm.status_local,
+                  callback: function($$v) {
+                    _vm.status_local = $$v
+                  },
+                  expression: "status_local"
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: _vm.errors.has("status"),
+                      expression: "errors.has('status')"
+                    }
+                  ],
+                  staticClass: "text-danger text-sm"
+                },
+                [_vm._v(_vm._s(_vm.errors.first("status")))]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "mt-4" },
+            [
+              _c("label", { staticClass: "vs-input--label" }, [_vm._v("Role")]),
+              _vm._v(" "),
+              _c("v-select", {
+                directives: [
+                  {
+                    name: "validate",
+                    rawName: "v-validate",
+                    value: "required",
+                    expression: "'required'"
+                  }
+                ],
+                attrs: {
+                  clearable: false,
+                  options: _vm.roleOptions,
+                  name: "role",
+                  dir: _vm.$vs.rtl ? "rtl" : "ltr"
+                },
+                model: {
+                  value: _vm.role_local,
+                  callback: function($$v) {
+                    _vm.role_local = $$v
+                  },
+                  expression: "role_local"
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: _vm.errors.has("role"),
+                      expression: "errors.has('role')"
+                    }
+                  ],
+                  staticClass: "text-danger text-sm"
+                },
+                [_vm._v(_vm._s(_vm.errors.first("role")))]
+              )
+            ],
+            1
+          )
+        ])
       ]),
       _vm._v(" "),
       _c(
@@ -1422,96 +1318,6 @@ var render = function() {
               [_vm._v(_vm._s(_vm.errors.first("mobile")))]
             ),
             _vm._v(" "),
-            _c("vs-input", {
-              directives: [
-                {
-                  name: "validate",
-                  rawName: "v-validate",
-                  value: "url:require_protocol",
-                  expression: "'url:require_protocol'"
-                }
-              ],
-              staticClass: "w-full mt-4",
-              attrs: {
-                label: "Website",
-                name: "website",
-                "data-vv-as": "field"
-              },
-              model: {
-                value: _vm.data_local.website,
-                callback: function($$v) {
-                  _vm.$set(_vm.data_local, "website", $$v)
-                },
-                expression: "data_local.website"
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "span",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.errors.has("website"),
-                    expression: "errors.has('website')"
-                  }
-                ],
-                staticClass: "text-danger text-sm"
-              },
-              [_vm._v(_vm._s(_vm.errors.first("website")))]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "mt-4" },
-              [
-                _c("label", { staticClass: "text-sm" }, [_vm._v("Languages")]),
-                _vm._v(" "),
-                _c("v-select", {
-                  directives: [
-                    {
-                      name: "validate",
-                      rawName: "v-validate",
-                      value: "required",
-                      expression: "'required'"
-                    }
-                  ],
-                  attrs: {
-                    multiple: "",
-                    closeOnSelect: false,
-                    options: _vm.langOptions,
-                    name: "lang_known",
-                    dir: _vm.$vs.rtl ? "rtl" : "ltr"
-                  },
-                  model: {
-                    value: _vm.data_local.languages_known,
-                    callback: function($$v) {
-                      _vm.$set(_vm.data_local, "languages_known", $$v)
-                    },
-                    expression: "data_local.languages_known"
-                  }
-                }),
-                _vm._v(" "),
-                _c(
-                  "span",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.errors.has("lang_known"),
-                        expression: "errors.has('lang_known')"
-                      }
-                    ],
-                    staticClass: "text-danger text-sm"
-                  },
-                  [_vm._v(_vm._s(_vm.errors.first("lang_known")))]
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
             _c("div", { staticClass: "mt-4" }, [
               _c("label", { staticClass: "text-sm" }, [_vm._v("Gender")]),
               _vm._v(" "),
@@ -1549,80 +1355,6 @@ var render = function() {
                       }
                     },
                     [_vm._v("Female")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vs-radio",
-                    {
-                      attrs: { "vs-value": "other" },
-                      model: {
-                        value: _vm.data_local.gender,
-                        callback: function($$v) {
-                          _vm.$set(_vm.data_local, "gender", $$v)
-                        },
-                        expression: "data_local.gender"
-                      }
-                    },
-                    [_vm._v("Other")]
-                  )
-                ],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "mt-6" }, [
-              _c("label", [_vm._v("Contact Options")]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "flex flex-wrap mt-1" },
-                [
-                  _c(
-                    "vs-checkbox",
-                    {
-                      staticClass: "mr-4 mb-2",
-                      attrs: { "vs-value": "email" },
-                      model: {
-                        value: _vm.data_local.contact_options,
-                        callback: function($$v) {
-                          _vm.$set(_vm.data_local, "contact_options", $$v)
-                        },
-                        expression: "data_local.contact_options"
-                      }
-                    },
-                    [_vm._v("Email")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vs-checkbox",
-                    {
-                      staticClass: "mr-4 mb-2",
-                      attrs: { "vs-value": "message" },
-                      model: {
-                        value: _vm.data_local.contact_options,
-                        callback: function($$v) {
-                          _vm.$set(_vm.data_local, "contact_options", $$v)
-                        },
-                        expression: "data_local.contact_options"
-                      }
-                    },
-                    [_vm._v("Message")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vs-checkbox",
-                    {
-                      staticClass: " mb-2",
-                      attrs: { "vs-value": "Phone" },
-                      model: {
-                        value: _vm.data_local.contact_options,
-                        callback: function($$v) {
-                          _vm.$set(_vm.data_local, "contact_options", $$v)
-                        },
-                        expression: "data_local.contact_options"
-                      }
-                    },
-                    [_vm._v("Phone")]
                   )
                 ],
                 1
@@ -1658,90 +1390,6 @@ var render = function() {
                 {
                   name: "validate",
                   rawName: "v-validate",
-                  value: "required",
-                  expression: "'required'"
-                }
-              ],
-              staticClass: "w-full mt-4",
-              attrs: { label: "Address Line 1", name: "addd_line_1" },
-              model: {
-                value: _vm.data_local.location.add_line_1,
-                callback: function($$v) {
-                  _vm.$set(_vm.data_local.location, "add_line_1", $$v)
-                },
-                expression: "data_local.location.add_line_1"
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "span",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.errors.has("addd_line_1"),
-                    expression: "errors.has('addd_line_1')"
-                  }
-                ],
-                staticClass: "text-danger text-sm"
-              },
-              [_vm._v(_vm._s(_vm.errors.first("addd_line_1")))]
-            ),
-            _vm._v(" "),
-            _c("vs-input", {
-              staticClass: "w-full mt-4",
-              attrs: { label: "Address Line 2" },
-              model: {
-                value: _vm.data_local.location.add_line_2,
-                callback: function($$v) {
-                  _vm.$set(_vm.data_local.location, "add_line_2", $$v)
-                },
-                expression: "data_local.location.add_line_2"
-              }
-            }),
-            _vm._v(" "),
-            _c("vs-input", {
-              directives: [
-                {
-                  name: "validate",
-                  rawName: "v-validate",
-                  value: "required|numeric",
-                  expression: "'required|numeric'"
-                }
-              ],
-              staticClass: "w-full mt-4",
-              attrs: { label: "Post Code", name: "post_code" },
-              model: {
-                value: _vm.data_local.location.post_code,
-                callback: function($$v) {
-                  _vm.$set(_vm.data_local.location, "post_code", $$v)
-                },
-                expression: "data_local.location.post_code"
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "span",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.errors.has("post_code"),
-                    expression: "errors.has('post_code')"
-                  }
-                ],
-                staticClass: "text-danger text-sm"
-              },
-              [_vm._v(_vm._s(_vm.errors.first("post_code")))]
-            ),
-            _vm._v(" "),
-            _c("vs-input", {
-              directives: [
-                {
-                  name: "validate",
-                  rawName: "v-validate",
                   value: "required|alpha",
                   expression: "'required|alpha'"
                 }
@@ -1749,11 +1397,11 @@ var render = function() {
               staticClass: "w-full mt-4",
               attrs: { label: "City", name: "city" },
               model: {
-                value: _vm.data_local.location.city,
+                value: _vm.data_local.city,
                 callback: function($$v) {
-                  _vm.$set(_vm.data_local.location, "city", $$v)
+                  _vm.$set(_vm.data_local, "city", $$v)
                 },
-                expression: "data_local.location.city"
+                expression: "data_local.city"
               }
             }),
             _vm._v(" "),
@@ -1785,11 +1433,11 @@ var render = function() {
               staticClass: "w-full mt-4",
               attrs: { label: "State", name: "state" },
               model: {
-                value: _vm.data_local.location.state,
+                value: _vm.data_local.state,
                 callback: function($$v) {
-                  _vm.$set(_vm.data_local.location, "state", $$v)
+                  _vm.$set(_vm.data_local, "state", $$v)
                 },
-                expression: "data_local.location.state"
+                expression: "data_local.state"
               }
             }),
             _vm._v(" "),
@@ -1821,11 +1469,11 @@ var render = function() {
               staticClass: "w-full mt-4",
               attrs: { label: "Country", name: "country" },
               model: {
-                value: _vm.data_local.location.country,
+                value: _vm.data_local.country,
                 callback: function($$v) {
-                  _vm.$set(_vm.data_local.location, "country", $$v)
+                  _vm.$set(_vm.data_local, "country", $$v)
                 },
-                expression: "data_local.location.country"
+                expression: "data_local.country"
               }
             }),
             _vm._v(" "),

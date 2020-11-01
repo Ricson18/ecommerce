@@ -22,6 +22,11 @@ Route::resource('products',\App\Http\Controllers\ProductController::class);
 Route::resource('categories',\App\Http\Controllers\CategoryController::class);
 Route::resource('customers',\App\Http\Controllers\CustomerController::class);
 Route::resource('orders',\App\Http\Controllers\OrderController::class);
+// Route::resource('users',\App\Http\Controllers\UserController::class);
+Route::resource('user-management/users',\App\Http\Controllers\UserController::class);
+// Route::get('user-management/users',function(){
+    
+// });
 
 Route::get('data-list/products',function(){
     return response()->json([

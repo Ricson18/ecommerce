@@ -10097,26 +10097,30 @@ __webpack_require__.r(__webpack_exports__);
   //   ]
   // },
   {
-    url: null,
     name: 'User',
     icon: 'UserIcon',
     i18n: 'User',
-    submenu: [{
-      url: '/apps/user/user-list',
-      name: 'List',
-      slug: 'app-user-list',
-      i18n: 'List'
-    }, {
-      url: '/apps/user/user-view/268',
-      name: 'View',
-      slug: 'app-user-view',
-      i18n: 'View'
-    }, {
-      url: '/apps/user/user-edit/268',
-      name: 'Edit',
-      slug: 'app-user-edit',
-      i18n: 'Edit'
-    }]
+    url: '/apps/user/user-list' // submenu: [
+    //   {
+    //     url: '/apps/user/user-list',
+    //     name: 'List',
+    //     slug: 'app-user-list',
+    //     i18n: 'List'
+    //   },
+    //   {
+    //     url: '/apps/user/user-view/268',
+    //     name: 'View',
+    //     slug: 'app-user-view',
+    //     i18n: 'View'
+    //   },
+    //   {
+    //     url: '/apps/user/user-edit/268',
+    //     name: 'Edit',
+    //     slug: 'app-user-edit',
+    //     i18n: 'Edit'
+    //   }
+    // ]
+
   }, {
     // url: null,
     name: 'Products',

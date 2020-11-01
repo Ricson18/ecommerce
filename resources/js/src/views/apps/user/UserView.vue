@@ -35,10 +35,6 @@
           <div class="vx-col flex-1" id="account-info-col-1">
             <table>
               <tr>
-                <td class="font-semibold">Username</td>
-                <td>{{ user_data.username }}</td>
-              </tr>
-              <tr>
                 <td class="font-semibold">Name</td>
                 <td>{{ user_data.name }}</td>
               </tr>
@@ -46,6 +42,10 @@
                 <td class="font-semibold">Email</td>
                 <td>{{ user_data.email }}</td>
               </tr>
+              <!-- <tr>
+                <td class="font-semibold">Role</td>
+                <td>{{ user_data.role }}</td>
+              </tr> -->
             </table>
           </div>
           <!-- /Information - Col 1 -->
@@ -61,10 +61,10 @@
                 <td class="font-semibold">Role</td>
                 <td>{{ user_data.role }}</td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <td class="font-semibold">Company</td>
                 <td>{{ user_data.company }}</td>
-              </tr>
+              </tr> -->
             </table>
           </div>
           <!-- /Information - Col 2 -->
@@ -77,39 +77,76 @@
 
       </vx-card>
 
+
+
       <div class="vx-row">
+        <div class="vx-col lg:w-1/2 w-full">
+          <vx-card title="Address" class="mb-base">
+            <table>
+              <!-- <tr>
+                <td class="font-semibold">Birth Date</td>
+                <td>{{ user_data.dob }}</td>
+              </tr> -->
+              <tr>
+                <td class="font-semibold">City</td>
+                <td>{{ user_data.city }}</td>
+              </tr>
+              <tr>
+                <td class="font-semibold">State</td>
+                <td>{{ user_data.state }}</td>
+              </tr>
+              <tr>
+                <td class="font-semibold">Country</td>
+                <td>{{ user_data.country }}</td>
+              </tr>
+              <!-- <tr>
+                <td class="font-semibold">Website</td>
+                <td>{{ user_data.website }}</td>
+              </tr> -->
+              <!-- <tr>
+                <td class="font-semibold">Languages</td>
+                <td>{{ user_data.languages_known.join(", ") }}</td>
+              </tr> -->
+              <!-- <tr>
+                <td class="font-semibold">Contact</td>
+                <td>{{ user_data.contact_options.join(", ") }}</td>
+              </tr> -->
+            </table>
+          </vx-card>
+        </div>
         <div class="vx-col lg:w-1/2 w-full">
           <vx-card title="Information" class="mb-base">
             <table>
-              <tr>
+              <!-- <tr>
                 <td class="font-semibold">Birth Date</td>
                 <td>{{ user_data.dob }}</td>
-              </tr>
+              </tr> -->
               <tr>
                 <td class="font-semibold">Mobile</td>
                 <td>{{ user_data.mobile }}</td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <td class="font-semibold">Website</td>
                 <td>{{ user_data.website }}</td>
-              </tr>
-              <tr>
+              </tr> -->
+              <!-- <tr>
                 <td class="font-semibold">Languages</td>
                 <td>{{ user_data.languages_known.join(", ") }}</td>
-              </tr>
+              </tr> -->
               <tr>
                 <td class="font-semibold">Gender</td>
                 <td>{{ user_data.gender }}</td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <td class="font-semibold">Contact</td>
                 <td>{{ user_data.contact_options.join(", ") }}</td>
-              </tr>
+              </tr> -->
             </table>
           </vx-card>
         </div>
 
-        <div class="vx-col lg:w-1/2 w-full">
+        
+        <!-- <div class="vx-col lg:w-1/2 w-full">
           <vx-card title="Social Links" class="mb-base">
             <table>
               <tr>
@@ -138,7 +175,7 @@
               </tr>
             </table>
           </vx-card>
-        </div>
+        </div> -->
       </div>
 
       <!-- Permissions -->

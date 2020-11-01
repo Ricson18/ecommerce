@@ -220,25 +220,38 @@ export default {
           headerCheckboxSelection: true
         },
         {
-          headerName: 'First Name',
-        //   headerName: 'Username',
-          field: 'lname',
+          headerName: 'Name',
+          field: 'name',
           filter: true,
           width: 210,
           cellRendererFramework: 'CellRendererLink'
         },
+        // {
+        //   headerName: 'Last Name',
+        //   field: 'fname',
+        //   filter: true,
+        //   width: 210,
+        //   cellRendererFramework: 'CellRendererLink'
+        // },
+        // {
+        //   headerName: 'Username',
+        //   field: 'username',
+        //   filter: true,
+        //   width: 210,
+        //   cellRendererFramework: 'CellRendererLink'
+        // },
         {
           headerName: 'Email',
           field: 'email',
           filter: true,
           width: 225
         },
-        {
-          headerName: 'Name',
-          field: 'name',
-          filter: true,
-          width: 200
-        },
+        // {
+        //   headerName: 'Name',
+        //   field: 'name',
+        //   filter: true,
+        //   width: 200
+        // },
         {
           headerName: 'Country',
           field: 'country',
@@ -266,12 +279,12 @@ export default {
           cellRendererFramework: 'CellRendererVerified',
           cellClass: 'text-center'
         },
-        {
-          headerName: 'Department',
-          field: 'department',
-          filter: true,
-          width: 150
-        },
+        // {
+        //   headerName: 'Department',
+        //   field: 'department',
+        //   filter: true,
+        //   width: 150
+        // },
         {
           headerName: 'Actions',
           field: 'transactions',

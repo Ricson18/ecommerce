@@ -266,23 +266,37 @@ __webpack_require__.r(__webpack_exports__);
         headerCheckboxSelectionFilteredOnly: true,
         headerCheckboxSelection: true
       }, {
-        headerName: 'First Name',
-        //   headerName: 'Username',
-        field: 'lname',
+        headerName: 'Name',
+        field: 'name',
         filter: true,
         width: 210,
         cellRendererFramework: 'CellRendererLink'
-      }, {
+      }, // {
+      //   headerName: 'Last Name',
+      //   field: 'fname',
+      //   filter: true,
+      //   width: 210,
+      //   cellRendererFramework: 'CellRendererLink'
+      // },
+      // {
+      //   headerName: 'Username',
+      //   field: 'username',
+      //   filter: true,
+      //   width: 210,
+      //   cellRendererFramework: 'CellRendererLink'
+      // },
+      {
         headerName: 'Email',
         field: 'email',
         filter: true,
         width: 225
-      }, {
-        headerName: 'Name',
-        field: 'name',
-        filter: true,
-        width: 200
-      }, {
+      }, // {
+      //   headerName: 'Name',
+      //   field: 'name',
+      //   filter: true,
+      //   width: 200
+      // },
+      {
         headerName: 'Country',
         field: 'country',
         filter: true,
@@ -305,12 +319,13 @@ __webpack_require__.r(__webpack_exports__);
         width: 125,
         cellRendererFramework: 'CellRendererVerified',
         cellClass: 'text-center'
-      }, {
-        headerName: 'Department',
-        field: 'department',
-        filter: true,
-        width: 150
-      }, {
+      }, // {
+      //   headerName: 'Department',
+      //   field: 'department',
+      //   filter: true,
+      //   width: 150
+      // },
+      {
         headerName: 'Actions',
         field: 'transactions',
         width: 150,
@@ -493,7 +508,8 @@ __webpack_require__.r(__webpack_exports__);
   name: 'CellRendererLink',
   computed: {
     url: function url() {
-      return '/apps/user/user-view/268'; // Below line will be for actual product
+      //   return '/apps/user/user-view/268'
+      return "/apps/user/user-view/" + this.params.data.id; // Below line will be for actual product
       // Currently it's commented due to demo purpose - Above url is for demo purpose
       // return "/apps/user/user-view/" + this.params.data.id
     }

@@ -29,7 +29,7 @@ This an ecommerce platform built with Laravel and VueJs. With Laravel as its Bac
 ## Requirements
 <pre>
 <code>PHP >=7.3
-MYSQL >=5.7</code>
+MYSQL >=8.0.21</code>
 </pre>
 
 ## Install

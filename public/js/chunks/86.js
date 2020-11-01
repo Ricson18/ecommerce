@@ -191,6 +191,43 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -407,14 +444,6 @@ var render = function() {
                         _c("table", [
                           _c("tr", [
                             _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Username")
-                            ]),
-                            _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(_vm.user_data.username))])
-                          ]),
-                          _vm._v(" "),
-                          _c("tr", [
-                            _c("td", { staticClass: "font-semibold" }, [
                               _vm._v("Name")
                             ]),
                             _vm._v(" "),
@@ -454,14 +483,6 @@ var render = function() {
                             ]),
                             _vm._v(" "),
                             _c("td", [_vm._v(_vm._s(_vm.user_data.role))])
-                          ]),
-                          _vm._v(" "),
-                          _c("tr", [
-                            _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Company")
-                            ]),
-                            _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(_vm.user_data.company))])
                           ])
                         ])
                       ]
@@ -517,66 +538,31 @@ var render = function() {
                   [
                     _c(
                       "vx-card",
-                      {
-                        staticClass: "mb-base",
-                        attrs: { title: "Information" }
-                      },
+                      { staticClass: "mb-base", attrs: { title: "Address" } },
                       [
                         _c("table", [
                           _c("tr", [
                             _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Birth Date")
+                              _vm._v("City")
                             ]),
                             _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(_vm.user_data.dob))])
+                            _c("td", [_vm._v(_vm._s(_vm.user_data.city))])
                           ]),
                           _vm._v(" "),
                           _c("tr", [
                             _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Mobile")
+                              _vm._v("State")
                             ]),
                             _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(_vm.user_data.mobile))])
+                            _c("td", [_vm._v(_vm._s(_vm.user_data.state))])
                           ]),
                           _vm._v(" "),
                           _c("tr", [
                             _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Website")
+                              _vm._v("Country")
                             ]),
                             _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(_vm.user_data.website))])
-                          ]),
-                          _vm._v(" "),
-                          _c("tr", [
-                            _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Languages")
-                            ]),
-                            _vm._v(" "),
-                            _c("td", [
-                              _vm._v(
-                                _vm._s(_vm.user_data.languages_known.join(", "))
-                              )
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("tr", [
-                            _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Gender")
-                            ]),
-                            _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(_vm.user_data.gender))])
-                          ]),
-                          _vm._v(" "),
-                          _c("tr", [
-                            _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Contact")
-                            ]),
-                            _vm._v(" "),
-                            _c("td", [
-                              _vm._v(
-                                _vm._s(_vm.user_data.contact_options.join(", "))
-                              )
-                            ])
+                            _c("td", [_vm._v(_vm._s(_vm.user_data.country))])
                           ])
                         ])
                       ]
@@ -593,72 +579,24 @@ var render = function() {
                       "vx-card",
                       {
                         staticClass: "mb-base",
-                        attrs: { title: "Social Links" }
+                        attrs: { title: "Information" }
                       },
                       [
                         _c("table", [
                           _c("tr", [
                             _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Twitter")
+                              _vm._v("Mobile")
                             ]),
                             _vm._v(" "),
-                            _c("td", [
-                              _vm._v(_vm._s(_vm.user_data.social_links.twitter))
-                            ])
+                            _c("td", [_vm._v(_vm._s(_vm.user_data.mobile))])
                           ]),
                           _vm._v(" "),
                           _c("tr", [
                             _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Facebook")
+                              _vm._v("Gender")
                             ]),
                             _vm._v(" "),
-                            _c("td", [
-                              _vm._v(
-                                _vm._s(_vm.user_data.social_links.facebook)
-                              )
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("tr", [
-                            _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Instagram")
-                            ]),
-                            _vm._v(" "),
-                            _c("td", [
-                              _vm._v(
-                                _vm._s(_vm.user_data.social_links.instagram)
-                              )
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("tr", [
-                            _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Github")
-                            ]),
-                            _vm._v(" "),
-                            _c("td", [
-                              _vm._v(_vm._s(_vm.user_data.social_links.github))
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("tr", [
-                            _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("CodePen")
-                            ]),
-                            _vm._v(" "),
-                            _c("td", [
-                              _vm._v(_vm._s(_vm.user_data.social_links.codepen))
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("tr", [
-                            _c("td", { staticClass: "font-semibold" }, [
-                              _vm._v("Slack")
-                            ]),
-                            _vm._v(" "),
-                            _c("td", [
-                              _vm._v(_vm._s(_vm.user_data.social_links.slack))
-                            ])
+                            _c("td", [_vm._v(_vm._s(_vm.user_data.gender))])
                           ])
                         ])
                       ]
