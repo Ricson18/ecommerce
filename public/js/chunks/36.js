@@ -266,8 +266,9 @@ __webpack_require__.r(__webpack_exports__);
         headerCheckboxSelectionFilteredOnly: true,
         headerCheckboxSelection: true
       }, {
-        headerName: 'Username',
-        field: 'username',
+        headerName: 'First Name',
+        //   headerName: 'Username',
+        field: 'lname',
         filter: true,
         width: 210,
         cellRendererFramework: 'CellRendererLink'
@@ -439,7 +440,7 @@ __webpack_require__.r(__webpack_exports__);
       /*
               Below line will be for actual product
               Currently it's commented due to demo purpose - Above url is for demo purpose
-               this.$router.push("/apps/user/user-edit/" + this.params.data.id).catch(() => {})
+                this.$router.push("/apps/user/user-edit/" + this.params.data.id).catch(() => {})
             */
     },
     confirmDeleteRecord: function confirmDeleteRecord() {
@@ -728,59 +729,6 @@ var render = function() {
                       _vm.statusFilter = $$v
                     },
                     expression: "statusFilter"
-                  }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "vx-col md:w-1/4 sm:w-1/2 w-full" },
-              [
-                _c("label", { staticClass: "text-sm opacity-75" }, [
-                  _vm._v("Verified")
-                ]),
-                _vm._v(" "),
-                _c("v-select", {
-                  staticClass: "mb-4 sm:mb-0",
-                  attrs: {
-                    options: _vm.isVerifiedOptions,
-                    clearable: false,
-                    dir: _vm.$vs.rtl ? "rtl" : "ltr"
-                  },
-                  model: {
-                    value: _vm.isVerifiedFilter,
-                    callback: function($$v) {
-                      _vm.isVerifiedFilter = $$v
-                    },
-                    expression: "isVerifiedFilter"
-                  }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "vx-col md:w-1/4 sm:w-1/2 w-full" },
-              [
-                _c("label", { staticClass: "text-sm opacity-75" }, [
-                  _vm._v("Department")
-                ]),
-                _vm._v(" "),
-                _c("v-select", {
-                  attrs: {
-                    options: _vm.departmentOptions,
-                    clearable: false,
-                    dir: _vm.$vs.rtl ? "rtl" : "ltr"
-                  },
-                  model: {
-                    value: _vm.departmentFilter,
-                    callback: function($$v) {
-                      _vm.departmentFilter = $$v
-                    },
-                    expression: "departmentFilter"
                   }
                 })
               ],

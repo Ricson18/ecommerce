@@ -85,7 +85,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { _babel_runtime_cor
 
       /*
         This property is created for fetching latest data from API when tab is changed
-         Please check it's watcher
+          Please check it's watcher
       */
       activeTab: 0
     };

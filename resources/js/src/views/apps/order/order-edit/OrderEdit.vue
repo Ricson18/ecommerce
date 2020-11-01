@@ -27,12 +27,12 @@
               <order-edit-tab-account class="mt-4" :data="user_data" />
             </div>
           </vs-tab>
-          <!-- <vs-tab label="Information" icon-pack="feather" icon="icon-info">
+          <vs-tab label="Billing Information" icon-pack="feather" icon="icon-info">
             <div class="tab-text">
-              <product-edit-tab-information class="mt-4" :data="user_data" />
+              <order-edit-tab-information class="mt-4" :data="user_data" />
             </div>
           </vs-tab>
-          <vs-tab label="Social" icon-pack="feather" icon="icon-share-2">
+          <!-- <vs-tab label="Social" icon-pack="feather" icon="icon-share-2">
             <div class="tab-text">
               <product-edit-tab-social class="mt-4" :data="user_data" />
             </div>

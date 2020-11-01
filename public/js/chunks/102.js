@@ -506,9 +506,9 @@ var render = function() {
                             _vm._v(" "),
                             _c("td", [
                               _vm._v(
-                                _vm._s(_vm.user_data.fname) +
+                                _vm._s(_vm.user_data.customer.fname) +
                                   " " +
-                                  _vm._s(_vm.user_data.lname)
+                                  _vm._s(_vm.user_data.customer.lname)
                               )
                             ])
                           ]),
@@ -519,7 +519,13 @@ var render = function() {
                             ]),
                             _vm._v(" "),
                             _c("td", [
-                              _vm._v(_vm._s(_vm.user_data.transactStatus))
+                              _vm._v(
+                                _vm._s(
+                                  _vm.user_data.transactStatus
+                                    ? "true"
+                                    : "false"
+                                )
+                              )
                             ])
                           ]),
                           _vm._v(" "),
@@ -615,7 +621,9 @@ var render = function() {
                               _vm._v("Email")
                             ]),
                             _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(_vm.user_data.email))])
+                            _c("td", [
+                              _vm._v(_vm._s(_vm.user_data.customer.email))
+                            ])
                           ]),
                           _vm._v(" "),
                           _c("tr", [
@@ -623,7 +631,9 @@ var render = function() {
                               _vm._v("Phone")
                             ]),
                             _vm._v(" "),
-                            _c("td", [_vm._v(_vm._s(_vm.user_data.phone))])
+                            _c("td", [
+                              _vm._v(_vm._s(_vm.user_data.customer.phone))
+                            ])
                           ])
                         ])
                       ]

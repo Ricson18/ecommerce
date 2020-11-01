@@ -36,23 +36,18 @@
         <!-- <vs-input class="w-full mt-4" label="Username" v-model="data_local.username" v-validate="'required|alpha_num'" name="username" />
         <span class="text-danger text-sm"  v-show="errors.has('username')">{{ errors.first('username') }}</span> -->
 
-        <vs-input class="w-full mt-4" label="Name" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="name" />
-        <span class="text-danger text-sm"  v-show="errors.has('name')">{{ errors.first('name') }}</span>
+        <vs-input class="w-full mt-4" label="First Name" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="fname" />
+        <span class="text-danger text-sm"  v-show="errors.has('fname')">{{ errors.first('fname') }}</span>
         
-        <vs-input class="w-full mt-4" label="Price" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="price" />
-        <span class="text-danger text-sm"  v-show="errors.has('price')">{{ errors.first('price') }}</span>
+        <vs-input class="w-full mt-4" label="Last Name" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="lname" />
+        <span class="text-danger text-sm"  v-show="errors.has('lname')">{{ errors.first('lname') }}</span>
+        
+        <vs-input class="w-full mt-4" label="Email" v-model="data_local.email" type="email" v-validate="'required|email'" name="email" />
+        <span class="text-danger text-sm"  v-show="errors.has('email')">{{ errors.first('email') }}</span>
 
-        <vs-input class="w-full mt-4" label="Quantity" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="quantity" />
-        <span class="text-danger text-sm"  v-show="errors.has('quantity')">{{ errors.first('quantity') }}</span>
+        <vs-input class="w-full mt-4" label="Phone" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="phone" />
+        <span class="text-danger text-sm"  v-show="errors.has('phone')">{{ errors.first('phone') }}</span>
 
-        <vs-input class="w-full mt-4" label="Slug" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="slug" />
-        <span class="text-danger text-sm"  v-show="errors.has('slug')">{{ errors.first('slug') }}</span>
-
-        <vs-textarea class="w-full mt-4" label="Description" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="desc" />
-        <span class="text-danger text-sm"  v-show="errors.has('desc')">{{ errors.first('desc') }}</span>
-
-        <!-- <vs-input class="w-full mt-4" label="Email" v-model="data_local.email" type="email" v-validate="'required|email'" name="email" />
-        <span class="text-danger text-sm"  v-show="errors.has('email')">{{ errors.first('email') }}</span> -->
       </div>
 
       <div class="vx-col md:w-1/2 w-full">
@@ -62,7 +57,24 @@
           <v-select v-model="status_local" :clearable="false" :options="statusOptions" v-validate="'required'" name="status" :dir="$vs.rtl ? 'rtl' : 'ltr'" />
           <span class="text-danger text-sm"  v-show="errors.has('status')">{{ errors.first('status') }}</span>
         </div>
-      
+        
+        <div class="mt-4">
+          <label class="vs-input--label">Payment Type</label>
+          <v-select v-model="status_local" :clearable="false" :options="statusOptions" v-validate="'required'" name="payment_type" :dir="$vs.rtl ? 'rtl' : 'ltr'" />
+          <span class="text-danger text-sm"  v-show="errors.has('payment_type')">{{ errors.first('payment_type') }}</span>
+        </div>
+        
+            <!-- <vs-input class="w-full mt-4" label="Status" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="status" />
+            <span class="text-danger text-sm"  v-show="errors.has('status')">{{ errors.first('status') }}</span> -->
+
+            <!-- <vs-input class="w-full mt-4" label="Payment Type" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="payment_type" />
+            <span class="text-danger text-sm"  v-show="errors.has('payment_type')">{{ errors.first('payment_type') }}</span> -->
+
+            <vs-textarea class="w-full mt-4" label="Date" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="Date" />
+            <span class="text-danger text-sm"  v-show="errors.has('date')">{{ errors.first('date') }}</span>
+        
+
+      <!-- 
         <div class="mt-4">
           <label class="vs-input--label">Stock</label>
           <v-select v-model="status_local" :clearable="false" :options="statusOptions" v-validate="'required'" name="stock" :dir="$vs.rtl ? 'rtl' : 'ltr'" />
@@ -76,7 +88,7 @@
         </div>
 
         <vs-textarea class="w-full mt-4" label="Short Description" v-model="data_local.name" v-validate="'required|alpha_spaces'" name="shortdesc" />
-        <span class="text-danger text-sm"  v-show="errors.has('shortdesc')">{{ errors.first('shortdesc') }}</span>
+        <span class="text-danger text-sm"  v-show="errors.has('shortdesc')">{{ errors.first('shortdesc') }}</span> -->
 
         <!-- <vs-input class="w-full mt-4" label="Company" v-model="data_local.company" v-validate="'alpha_spaces'" name="company" />
         <span class="text-danger text-sm"  v-show="errors.has('company')">{{ errors.first('company') }}</span> -->

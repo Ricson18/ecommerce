@@ -40,11 +40,11 @@
               </tr> -->
               <tr>
                 <td class="font-semibold">Customer Name</td>
-                <td>{{ user_data.fname }} {{ user_data.lname }}</td>
+                <td>{{ user_data.customer.fname }} {{ user_data.customer.lname }}</td>
               </tr>
               <tr>
                 <td class="font-semibold">Status</td>
-                <td>{{ user_data.transactStatus }}</td>
+                <td>{{ user_data.transactStatus?'true':'false' }}</td>
                 <!-- <td>{{ user_data.status }}</td> -->
               </tr>
               <tr>
@@ -103,11 +103,11 @@
               </tr>
               <tr>
                 <td class="font-semibold">Email</td>
-                <td>{{ user_data.email }}</td>
+                <td>{{ user_data.customer.email }}</td>
               </tr>
               <tr>
                 <td class="font-semibold">Phone</td>
-                <td>{{ user_data.phone }}</td>
+                <td>{{ user_data.customer.phone }}</td>
               </tr> 
 
               <!-- <tr> -->

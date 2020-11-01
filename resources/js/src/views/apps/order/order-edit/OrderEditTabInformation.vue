@@ -15,49 +15,55 @@
         <!-- Col Header -->
         <div class="flex items-end">
           <feather-icon icon="UserIcon" class="mr-2" svgClasses="w-5 h-5" />
-          <span class="leading-none font-medium">Personal Information</span>
+          <span class="leading-none font-medium">Billing</span>
         </div>
 
         <!-- Col Content -->
         <div>
 
           <!-- DOB -->
-          <div class="mt-4">
+          <!-- <div class="mt-4">
             <label class="text-sm">Birth Date</label>
             <flat-pickr v-model="data_local.dob" :config="{ dateFormat: 'd F Y', maxDate: new Date() }" class="w-full" v-validate="'required'" name="dob" />
             <span class="text-danger text-sm"  v-show="errors.has('dob')">{{ errors.first('dob') }}</span>
-          </div>
+          </div> -->
 
-          <vs-input class="w-full mt-4" label="Mobile" v-model="data_local.mobile" v-validate="{regex: '^\\+?([0-9]+)$' }" name="mobile" />
-          <span class="text-danger text-sm"  v-show="errors.has('mobile')">{{ errors.first('mobile') }}</span>
+          <vs-input class="w-full mt-4" label="Billing City" v-model="data_local.billingCity" v-validate="{regex: '^\\+?([0-9]+)$' }" name="billingCity" />
+          <span class="text-danger text-sm"  v-show="errors.has('billingCity')">{{ errors.first('billingCity') }}</span>
 
-          <vs-input class="w-full mt-4" label="Website" v-model="data_local.website" v-validate="'url:require_protocol'" name="website" data-vv-as="field" />
-          <span class="text-danger text-sm"  v-show="errors.has('website')">{{ errors.first('website') }}</span>
+          <vs-input class="w-full mt-4" label="Billing Address" v-model="data_local.billingAddress" v-validate="{regex: '^\\+?([0-9]+)$' }" name="billingAddress" />
+          <span class="text-danger text-sm"  v-show="errors.has('billingAddress')">{{ errors.first('billingAddress') }}</span>
 
-          <div class="mt-4">
+          <vs-input class="w-full mt-4" label="Billing Country" v-model="data_local.billingCountry" v-validate="{regex: '^\\+?([0-9]+)$' }" name="billingCountry" />
+          <span class="text-danger text-sm"  v-show="errors.has('billingCountry')">{{ errors.first('billingCountry') }}</span>
+
+          <!-- <vs-input class="w-full mt-4" label="Website" v-model="data_local.website" v-validate="'url:require_protocol'" name="website" data-vv-as="field" />
+          <span class="text-danger text-sm"  v-show="errors.has('website')">{{ errors.first('website') }}</span> -->
+
+          <!-- <div class="mt-4">
             <label class="text-sm">Languages</label>
             <v-select v-model="data_local.languages_known" multiple :closeOnSelect="false" :options="langOptions" v-validate="'required'" name="lang_known" :dir="$vs.rtl ? 'rtl' : 'ltr'" />
             <span class="text-danger text-sm"  v-show="errors.has('lang_known')">{{ errors.first('lang_known') }}</span>
-          </div>
+          </div> -->
 
           <!-- Gender -->
-          <div class="mt-4">
+          <!-- <div class="mt-4">
             <label class="text-sm">Gender</label>
             <div class="mt-2">
               <vs-radio v-model="data_local.gender" vs-value="male" class="mr-4">Male</vs-radio>
               <vs-radio v-model="data_local.gender" vs-value="female" class="mr-4">Female</vs-radio>
               <vs-radio v-model="data_local.gender" vs-value="other">Other</vs-radio>
             </div>
-          </div>
+          </div> -->
 
-          <div class="mt-6">
+          <!-- <div class="mt-6">
             <label>Contact Options</label>
             <div class="flex flex-wrap mt-1">
             <vs-checkbox v-model="data_local.contact_options" vs-value="email" class="mr-4 mb-2">Email</vs-checkbox>
             <vs-checkbox v-model="data_local.contact_options" vs-value="message" class="mr-4 mb-2">Message</vs-checkbox>
             <vs-checkbox v-model="data_local.contact_options" vs-value="Phone" class=" mb-2">Phone</vs-checkbox>
             </div>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -68,12 +74,19 @@
           <!-- Col Header -->
           <div class="flex items-end md:mt-0 mt-base">
             <feather-icon icon="MapPinIcon" class="mr-2" svgClasses="w-5 h-5" />
-            <span class="leading-none font-medium">Address</span>
+            <span class="leading-none font-medium">Information</span>
           </div>
+
 
           <!-- Col Content -->
           <div>
-            <vs-input class="w-full mt-4" label="Address Line 1" v-model="data_local.location.add_line_1" v-validate="'required'" name="addd_line_1" />
+          <vs-input class="w-full mt-4" label="Billing Postal Code" v-model="data_local.billingPostalCode" v-validate="{regex: '^\\+?([0-9]+)$' }" name="billingPostalCode" />
+          <span class="text-danger text-sm"  v-show="errors.has('billingPostalCode')">{{ errors.first('billingPostalCode') }}</span>
+
+          <vs-input class="w-full mt-4" label="Billing Email" v-model="data_local.billingEmail" v-validate="{regex: '^\\+?([0-9]+)$' }" name="billingEmail" />
+          <span class="text-danger text-sm"  v-show="errors.has('billingEmail')">{{ errors.first('billingEmail') }}</span>
+          
+            <!-- <vs-input class="w-full mt-4" label="Address Line 1" v-model="data_local.location.add_line_1" v-validate="'required'" name="addd_line_1" />
             <span class="text-danger text-sm"  v-show="errors.has('addd_line_1')">{{ errors.first('addd_line_1') }}</span>
 
             <vs-input class="w-full mt-4" label="Address Line 2" v-model="data_local.location.add_line_2" />
@@ -88,7 +101,7 @@
             <span class="text-danger text-sm"  v-show="errors.has('state')">{{ errors.first('state') }}</span>
 
             <vs-input class="w-full mt-4" label="Country" v-model="data_local.location.country" v-validate="'required|alpha'" name="country" />
-            <span class="text-danger text-sm"  v-show="errors.has('country')">{{ errors.first('country') }}</span>
+            <span class="text-danger text-sm"  v-show="errors.has('country')">{{ errors.first('country') }}</span> -->
 
           </div>
       </div>
